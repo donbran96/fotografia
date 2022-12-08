@@ -1,0 +1,46 @@
+.proyectos img{
+    opacity: 0.5;
+}
+.proyectos img:hover{
+    opacity: 1;
+    transition: all 1s ease-out;
+    transform: scale(1.2);
+}
+.modal{
+    
+    margin: 0 auto;
+}
+.active{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+   z-index: 30;
+}
+.active img{
+    z-index: 40;
+    height: inherit;
+    width: auto;
+    max-width: 90%;
+    opacity: 1;
+    
+}
+.active img:hover{
+    transition: none;
+    transform: none;
+}
+.active::after{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+   
+}
